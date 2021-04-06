@@ -30,7 +30,15 @@ export const Footer = styled.footer`
   padding: 2vh 0;
   font-weight: 700;
   color: #fff;
-  background: #b2fefa;
-  background: -webkit-linear-gradient(to bottom, #0ed2f7, #b2fefa);
-  background: linear-gradient(to bottom, #0ed2f7, #b2fefa);
+  background: #1488cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `

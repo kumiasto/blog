@@ -1,21 +1,29 @@
 import React from "react"
 import Layout from "./Layout"
 import { graphql } from "gatsby"
+
 import {
   StyledImage,
   ImageWrapper,
   PostContainer,
   PostTitle,
   PostAuthor,
+  PostNav,
+  PostTitleNav,
+  StyledNav,
+  PreviousIcon,
+  NextIcon,
 } from "../style/post"
 
-const Post = ({ data }) => {
+const Post = ({ data, pageContext }) => {
   const { html } = data.markdownRemark
   const { title, author, date, thumb } = data.markdownRemark.frontmatter
 
+  const { next, previous } = pageContext
+
   return (
     <Layout>
-      <div>
+      <>
         <PostContainer>
           <PostTitle>{title}</PostTitle>
           <PostAuthor>
@@ -24,18 +32,28 @@ const Post = ({ data }) => {
             <h4>{date}</h4>
           </PostAuthor>
         </PostContainer>
-
         <ImageWrapper>
-          <StyledImage
-            fluid={thumb.childImageSharp.fluid}
-            style={{ objectFit: "contain" }}
-          />
+          <StyledImage fluid={thumb.childImageSharp.fluid} />
         </ImageWrapper>
         <PostContainer
           dangerouslySetInnerHTML={{ __html: html }}
           style={{ textAlign: "left", padding: "5vh 0" }}
         />
-      </div>
+        <PostNav>
+          {next && (
+            <StyledNav to={`/${next.frontmatter.slug}`}>
+              <PreviousIcon />
+              <PostTitleNav>{next.frontmatter.title}</PostTitleNav>
+            </StyledNav>
+          )}
+          {previous && (
+            <StyledNav to={`/${previous.frontmatter.slug}`}>
+              <PostTitleNav>{previous.frontmatter.title}</PostTitleNav>
+              <NextIcon />
+            </StyledNav>
+          )}
+        </PostNav>
+      </>
     </Layout>
   )
 }

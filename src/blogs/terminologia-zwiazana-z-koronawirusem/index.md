@@ -6,9 +6,7 @@ slug: terminologia-zwiazana-z-koronawirusem
 thumb: ../../images/coronavirus-4924022_1920.jpg
 ---
 
-## 1\. Zacznijmy od nazewnictwa samego wirusa
-
-**KORONAWIRUS** - to nazwa rodziny wirusów, których otoczka pod mikroskopem przypomina koronę.
+**Koronawirus** - to nazwa rodziny wirusów, których otoczka pod mikroskopem przypomina koronę.
 
 **SARS-CoV-2** \- jest faktycznym wirusem, zawdzięcza swoją nazwę genetycznemu podobieństwu do oryginalnego wirusa SARS (2003r.). „SARS-CoV-2” jest skrótem od z ang. „ciężki ostry zespół oddechowy koronawirus 2”.
 
@@ -16,7 +14,9 @@ thumb: ../../images/coronavirus-4924022_1920.jpg
 
 Wydaje się, że istnieją dwa typy wirusa SARS-CoV-2. Jeden bardziej agresywny (70% przypadków) i mniej agresywny (30% przypadków). Chociaż bardziej agresywny typ jest nadal powszechny. Wydaje się, że jego rozpowszechnienie zmniejszyło się (prawdopodobnie w wyniku interwencji człowieka) od wczesnych stadiów wybuchu w Wuhan.
 
-## 2\. COVID-19
+<p>&nbsp;</p>
+
+### COVID-19
 
 Istnieje siedem koronawirusów, które mogą powodować ludzkie choroby, przy czym trzy najcięższe z tych chorób to SARS, MERS i COVID-19.
 
@@ -26,13 +26,17 @@ Pozostałe cztery koronawirusy (zwane: HCoV 229E, NL63, OC43 i HKU1) od dawna s�
 
 Należy pamiętać, że wskaźniki śmiertelności w przypadku zarówno COVID-19, jak i grypy sezonowej różnią się w zależności od lokalizacji.
 
-## 3\. Okres inkubacji
+<p>&nbsp;</p>
+
+### Okres inkubacji
 
 Okres inkubacji wirusa to 2–14 dni, a mediana wynosi 5–6 dni. Jedno studium przypadku sugeruje, że okres inkubacji wirusa może wydłużyć się do 24 dni. Co z kolei prowadzi do nieświadomego rozpowszechniania wirusa.
 
 Dlatego należy stosować zasady higieny (częste, dokładne mycie rąk i inne nawyki ograniczające transmisję). Jeść różnorodnie z odpowiednimi makro i mikro składnikami. Odradzamy deficyt kaloryczny w czasie epidemii, ponieważ obciąża on wtedy organizm i bardziej podatny na infekcje. Ponadto ważna jest aktywność fizyczna oraz odpowiednio długi sen ([sprawdź 4 zasady przy SARS-CoV-2](https://zachlorowani.pl/4-zasady-przy-sars-cov-2/)).
 
-## 4\. Obciążenie wirusem (miano wirusa)
+<p>&nbsp;</p>
+
+### Obciążenie wirusem (miano wirusa)
 
 Wirusa u chorego stwierdza się pobierając wymaz z gardła, krew i plwocine. I badając go dwóch różnych laboratoriach, dopiero przy podwójnie potwierdzonej próbie jest stwierdzone zakażenie.
 

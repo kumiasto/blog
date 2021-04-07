@@ -1,4 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: "zachlorowani.pl",
+    description:
+      "Najlepszy blog o pływaniu. Dieta, suplementacja, trening pływaka.",
+    url: "https://zachlorowani.pl",
+    images: "/zachlorowani-przezroczyste.png",
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

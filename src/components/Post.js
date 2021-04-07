@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "./Layout"
 import { graphql } from "gatsby"
+import { Seo } from "./Seo"
 
 import {
   StyledImage,
@@ -21,39 +22,44 @@ const Post = ({ data, pageContext }) => {
 
   const { next, previous } = pageContext
 
+  const seoImage = thumb.publicURL
+
   return (
     <Layout>
-      <>
-        <PostContainer>
-          <PostTitle>{title}</PostTitle>
-          <PostAuthor>
-            <h4>{author}</h4>
-            <strong>-</strong>
-            <h4>{date}</h4>
-          </PostAuthor>
-        </PostContainer>
-        <ImageWrapper>
-          <StyledImage fluid={thumb.childImageSharp.fluid} />
-        </ImageWrapper>
-        <PostContainer
-          dangerouslySetInnerHTML={{ __html: html }}
-          style={{ textAlign: "left", padding: "5vh 0" }}
-        />
-        <PostNav>
-          {next && (
-            <StyledNav to={`/${next.frontmatter.slug}`}>
-              <PreviousIcon />
-              <PostTitleNav>{next.frontmatter.title}</PostTitleNav>
-            </StyledNav>
-          )}
-          {previous && (
-            <StyledNav to={`/${previous.frontmatter.slug}`}>
-              <PostTitleNav>{previous.frontmatter.title}</PostTitleNav>
-              <NextIcon />
-            </StyledNav>
-          )}
-        </PostNav>
-      </>
+      <Seo
+        title={title}
+        image={seoImage}
+        description={data.markdownRemark.excerpt}
+      />
+      <PostContainer>
+        <PostTitle>{title}</PostTitle>
+        <PostAuthor>
+          <h4>{author}</h4>
+          <strong>-</strong>
+          <h4>{date}</h4>
+        </PostAuthor>
+      </PostContainer>
+      <ImageWrapper>
+        <StyledImage fluid={thumb.childImageSharp.fluid} />
+      </ImageWrapper>
+      <PostContainer
+        dangerouslySetInnerHTML={{ __html: html }}
+        style={{ textAlign: "left", padding: "5vh 0" }}
+      />
+      <PostNav>
+        {next && (
+          <StyledNav to={`/${next.frontmatter.slug}`}>
+            <PreviousIcon />
+            <PostTitleNav>{next.frontmatter.title}</PostTitleNav>
+          </StyledNav>
+        )}
+        {previous && (
+          <StyledNav to={`/${previous.frontmatter.slug}`}>
+            <PostTitleNav>{previous.frontmatter.title}</PostTitleNav>
+            <NextIcon />
+          </StyledNav>
+        )}
+      </PostNav>
     </Layout>
   )
 }
@@ -74,8 +80,10 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+          publicURL
         }
       }
+      excerpt
     }
   }
 `

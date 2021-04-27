@@ -41,7 +41,7 @@ export const PostTitle = styled.h1`
     margin-top: 0;
   }
 `
-export const PostAuthor = styled.p`
+export const PostAuthor = styled.div`
   display: flex;
   justify-content: space-around;
   width: 70%;

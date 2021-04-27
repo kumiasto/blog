@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "./Layout"
 import { graphql } from "gatsby"
-import { Seo } from "./Seo"
+import Layout from "../components/Layout"
+import { Seo } from "../components/Seo"
 
 import {
   StyledImage,

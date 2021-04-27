@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
   data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
     actions.createPage({
       path: node.frontmatter.slug,
-      component: path.resolve("./src/components/Post.js"),
+      component: path.resolve("./src/templates/Post.js"),
       context: {
         slug: node.frontmatter.slug,
         next,
